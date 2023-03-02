@@ -1,0 +1,54 @@
+.card{
+    width: 250px;
+    height: 350px;
+    border-radius: 15px;
+    background-image: url('../IMG/bg.png');
+    background-size: cover;
+}
+.bc{
+    display: flex;
+    justify-content: center;
+}
+.bc button{
+    background-color: darkred;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    position: absolute;
+}
+.at{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    color: rgba(36, 4, 4, 0.933);
+    text-shadow: 0 0 12px rgba(227, 133, 1, 0.849);
+}
+.at h2{
+    margin-top:1px;
+    margin-bottom: 2px;
+}
+.im{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+}
+.nom{
+    color: rgba(36, 4, 4, 0.933);
+    font-size: 20px;
+    text-shadow: 0 0 18px rgb(218, 211, 8);
+    background-image: url('../IMG/fn.png');
+    transform:rotate(180deg);
+    background-size: cover;
+    margin-top: -20px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    position: relative;
+}
+.nom h2{
+    margin-top: 40px;
+    margin-bottom: 59px;
+    transform:rotate(180deg);
+
+}
