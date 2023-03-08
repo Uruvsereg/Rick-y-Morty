@@ -2,33 +2,55 @@ import style from './Card.module.css';
 import {Link} from 'react-router-dom'
 
 export default function Card({name,species,gender,image,onClose,id}) {
-   // sexo=(gender)=>{
-   //    if(this.gender=='Male'){
-   //       return '♂';
-   //    }
-   //    if(this.gender=='Female'){
-   //       return '♀';
-   //    }
-   //    return '⚧️';
-   // }
-   // raza=()=>{
-   //    switch(this.species){
-   //       case 'Human':
-   //          return '웃';
-   //       break;
-   //       case 'Alien':
-   //          return '👽';
-   //       break;
-   //       case 'Robot':
-   //          return '🤖';
-   //       break;
-   //    }
-   // }
+   const sexo=()=>{
+      if(gender==="Male"){
+         return "♂";
+      }
+      else if(gender==="Female"){
+         return "♀";
+      }
+      else{
+         return "⚧️";
+      }
+   }
+   const raza=()=>{
+      if(species==='Human'){
+         return '웃';
+      }
+      else if(species==='Alien'){
+         return '🛸';
+      }
+      else if(species==='Robot'){
+         return '🤖';
+      }
+      else if(species==='Mythological Creature'){
+         return '🔱';
+      }
+      else if(species==='Animal'){
+         return '🐾';
+      }
+      else if(species==='Humanoid'){
+         return '유';
+      }
+      else if(species==='Poopybutthole'){
+         return '💩';
+      }
+      else if(species==='Cronenberg'){
+         return '☣️';
+      }
+      else if(species==='Disease'){
+         return '🧫';
+      }
+      //☿❤️☠️🦠
+      else{
+         return species
+      }
+   }
    return (
       <div className={style.card}>
          <div className={style.at}>
-            <h2>{species}</h2>
-            <h2>{gender}</h2>
+            <h2>{raza()}</h2>
+            <h2>{sexo()}</h2>
          </div>
          <Link to={`Detalles/${id}`}>
             <div>
