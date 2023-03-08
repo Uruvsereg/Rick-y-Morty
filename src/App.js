@@ -47,7 +47,7 @@ function App () {
 
   return (
     <div className='App' style={{ padding: '25px' }}>
-      {location.pathname==='/'?<Form login={login}/>:<NAV on search={onSearch}/>}
+      {location.pathname==='/'?<Form login={login}/>:<NAV onSearch={onSearch}/>}
       <nav onSearch={onSearch}/>
       <Routes>
         <Route path='/inicio' element={
