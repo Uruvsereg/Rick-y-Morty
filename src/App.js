@@ -27,18 +27,17 @@ function App () {
     !access && Navigate('/')
   },[access,Navigate])
   
-  const onSearch=(character)=>{
+  const onSearch=(character)=> {
     fetch(`https://rickandmortyapi.com/api/character/${character}`)
-    .then((response)=>response.json())
-    .then((data)=>{
-      if(data.name){
-        setCharacters((oldChars)=>[...oldChars,data]);
-      }
-      else{
-        alert('No hay personaje con ese ID');
-      }
-    })
-  }
+       .then((response) => response.json())
+       .then((data) => {
+          if (data.name) {
+             setCharacters((oldChars) => [...oldChars, data]);
+          } else {
+             window.alert('No hay personajes con ese ID');
+          }
+       });
+ }
 
   const onClose=(id)=>{
     setCharacters(
@@ -48,13 +47,14 @@ function App () {
 
   return (
     <div className='App' style={{ padding: '25px' }}>
-      {location.pathname='/'?<Form/>:<NAV on search={onSearch}/>}
+      {location.pathname==='/'?<Form login={login}/>:<NAV on search={onSearch}/>}
       <nav onSearch={onSearch}/>
       <Routes>
         <Route path='/inicio' element={
           <div>
             <Cards
              characters={characters}
+             onClose={onClose}
             />
           </div>}/>
         <Route path='/acerca' element={<About/>}/>

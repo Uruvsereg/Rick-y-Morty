@@ -1,6 +1,6 @@
 import { useState } from "react";
 import style from './formulario.module.css';
-import validations from "./validation";
+import validation from "./validation";
 
 const Form=({login})=>{
     const [userData,setUserData]=useState({ 
@@ -14,7 +14,7 @@ const Form=({login})=>{
             [event.target.name]: event.target.value
         })
         setErrors(
-            validations({
+            validation({
                 ...userData,
                 [event.target.name]: event.target.value
             })
@@ -34,7 +34,7 @@ const Form=({login})=>{
     return(
         <div>
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className={style.ing}>
                     <div className={style.loginu}>
                         <label htmlFor='username'>Username:  </label>
                         <input type='text' name='username' value={userData.username} onChange={handleInputChange} className={style.lue}></input>
@@ -54,10 +54,6 @@ const Form=({login})=>{
     )
 }
 export default Form;
-
-// import { useState } from "react";
-// import style from "./formulario.module.css";
-// import validation from "./validation.js";
 
 // export default function Form (props){
 //     const [userData, setUserData] = useState({

@@ -1,15 +1,17 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import style from './Searchbar.module.css';
 
 function SearchBar({onSearch}) {
    const [character,setCharacter]=useState('');
+
    const hadleChange=(event)=>{
       setCharacter(event.target.value);
    }
+
    const handleKeyPress = (event) => {
       if(event.key === 'Enter'){
         onSearch(character)
-        setCharacter=''
+        setCharacter('')
       }
     }
    return (
