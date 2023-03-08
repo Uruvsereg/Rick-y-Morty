@@ -1,19 +1,22 @@
+import { useState } from "react";
+import style from './Searchbar.module.css';
+import { useState,useEffect } from 'react';
+
 function SearchBar({onSearch}) {
-   // onSearch=()=>{
-   //    fetch(`https://rickandmortyapi.com/api/character/${character}`)
-   //    .then((response) => response.json())
-   //    .then((data) => {
-   //       if (data.name) {
-   //          setCharacters((oldChars) => [...oldChars, data]);
-   //       } else {
-   //          window.alert('No hay personajes con ese ID');
-   //       }
-   //    });
-   // }
+   const [character,setCharacter]=useState('');
+   const hadleChange=(event)=>{
+      setCharacter(event.target.value);
+   }
+   const handleKeyPress = (event) => {
+      if(event.key === 'Enter'){
+        onSearch(character)
+        setCharacter=''
+      }
+    }
    return (
-      <div>
-         <input type='search'/>
-         <button onClick={onSearch}>Agregar</button>
+      <div className={style.bg}>
+         <input type='search' value={character} onChange={hadleChange} onKeyDown={handleKeyPress}/>
+         <button onClick={()=>onSearch(character)} className={style.bg}>Agregar</button>
       </div>
    );
 } 
