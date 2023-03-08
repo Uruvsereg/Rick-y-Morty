@@ -1,12 +1,12 @@
 .bg{
-    background-image: url('../components/IMG/galaxia01.gif');
+    background-image: url('../IMG/galaxia01.gif');
     background-size:contain;
     width: 600px;
     height: 1000px;
     align-items:center;
 }
 .img{
-    background-image: url('./IMG/nume.png');
+    background-image: url('../IMG/FC.png');
     background-size: contain;
     border-radius: 150px;
 }

@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import style from './Searchbar.module.css';
-import { useState,useEffect } from 'react';
 
 function SearchBar({onSearch}) {
    const [character,setCharacter]=useState('');
