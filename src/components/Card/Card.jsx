@@ -1,7 +1,34 @@
 import style from './Card.module.css';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { useState, useEffect } from 'react';
+import { agregar,eleminar } from '../../redux/actions';
 
 export default function Card({name,species,gender,image,onClose,id}) {
+
+   const [favorito,setFavorito]=useState(false);
+   const dispatch=useDispatch();
+   const myFavorites=useSelector(state=>state.myFavorites);
+
+   useEffect(()=>{
+      myFavorites.forEach((fav) => {
+         if(fav.id===id){
+            setFavorito(true);
+         }
+      });
+   },[myFavorites]);
+
+   const handleFavorite=()=>{
+      if(favorito){
+         setFavorito(false)
+         dispatch(eleminar(id))
+      }
+      else{
+         setFavorito(true);
+         dispatch(agregar({name,species,gender,image,onClose,id}))
+      }
+   }
+
    const sexo=()=>{
       if(gender==="Male"){
          return "♂";
@@ -41,13 +68,20 @@ export default function Card({name,species,gender,image,onClose,id}) {
       else if(species==='Disease'){
          return '🧫';
       }
-      //☿❤️☠️🦠
+      //alive❤️dead☠️🦠
       else{
          return species
       }
    }
    return (
       <div className={style.card}>
+         {
+            favorito?(
+               <button onClick={handleFavorite}>❣️</button>
+            ):(
+               <button onClick={handleFavorite}>🤍</button>
+            )
+         }
          <div className={style.at}>
             <h2>{raza()}</h2>
             <h2>{sexo()}</h2>

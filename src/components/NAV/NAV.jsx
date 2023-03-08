@@ -7,6 +7,7 @@ const NAV=({onSearch})=>{
         <nav>
             <div className={style.n}>
                 <button><Link to='/inicio'>Inicio</Link></button>
+                <button><Link to='//favoritos'>Favoritos</Link></button>
                 <button><Link to='/acerca'>Acerca de</Link></button>
                 <SearchBar onSearch={onSearch}/>
                 <button><Link to='/'>Salir</Link></button>

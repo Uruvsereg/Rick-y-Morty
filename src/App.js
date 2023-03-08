@@ -6,6 +6,7 @@ import Detalles from './components/Detalles/Detalles.jsx'
 import { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Form from './components/Form/Form';
+import Favorites from './components/Favorites/favorites';
 
 function App () {
   const location =useLocation();
@@ -59,6 +60,7 @@ function App () {
           </div>}/>
         <Route path='/acerca' element={<About/>}/>
         <Route path='/detalles/:detailId' element={<Detalles/>}/>
+        <Route path='/favoritos' element={<Favorites/>}/>
       </Routes>
     </div>
   )
