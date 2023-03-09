@@ -1,0 +1,13 @@
+.n{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 10px;
+    width: 2075px;
+    height: 25px;
+    text-align: center;
+}
+.n button{
+    background-color: rgb(18, 196, 27);
+    border-radius: 10px;
+}
