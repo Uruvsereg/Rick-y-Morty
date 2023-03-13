@@ -1,5 +1,4 @@
-// import styles from '../Favorites/favorites.module.css';
-import style from '../Card/Card.module.css';
+import style from '../Favorites/favorites.module.css';
 import { useSelector,useDispatch } from "react-redux";
 import { Link } from 'react-router-dom';
 import { orderCards,filterCards } from '../../redux/actions';

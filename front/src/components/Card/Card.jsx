@@ -77,31 +77,33 @@ export default function Card({name,species,gender,image,onClose,id}) {
       }
    }
    return (
-      <div className={style.card}>
-         <div className={style.at}>
-            <h2>{raza()}</h2>
-            <h2>{sexo()}</h2>
-         </div>
-         <Link to={`/detalles/${id}`}>
-            <div>
-               <img  src={image} alt={name} className={style.im}/>
+      <body  className={style.bg}>
+         <div className={style.card}>
+            <div className={style.at}>
+               <h2>{raza()}</h2>
+               <h2>{sexo()}</h2>
             </div>
-         </Link>
-         <div className={style.nom}>
-            <h2>{name}</h2>
-         </div>
-         <div className={style.bar}>
-            <div className={style.bc}>
-               <button onClick={onClose}>x</button>
+            <Link to={`/detalles/${id}`}>
+               <div>
+                  <img  src={image} alt={name} className={style.im}/>
+               </div>
+            </Link>
+            <div className={style.nom}>
+               <h2>{name}</h2>
             </div>
-         {
-            favorito?(
-               <button onClick={handleFavorite}>❣️</button>
-            ):(
-               <button onClick={handleFavorite}>🤍</button>
-            )
-         }
+            <div className={style.bar}>
+               <div className={style.bc}>
+                  <button onClick={onClose}>x</button>
+               </div>
+            {
+               favorito?(
+                  <button onClick={handleFavorite}>❣️</button>
+               ):(
+                  <button onClick={handleFavorite}>🤍</button>
+               )
+            }
+            </div>
          </div>
-      </div>
+      </body>
    );
 }

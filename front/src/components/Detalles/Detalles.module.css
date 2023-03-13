@@ -1,12 +1,80 @@
+body{
+    background-image: url('../../IMG/bg2.jpg');
+}
 .bg{
+    background-image: url('../../IMG/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    width: 2050px;
+    height:1000px;
+    position:absolute;
+    border-radius: 50px;
+    box-shadow: 0 0 50px rgb(252, 252, 95);
+}
+.b{
     background-image: url('../../IMG/galaxia01.gif');
     background-size:contain;
     width: 600px;
     height: 1000px;
     align-items:center;
+    position: absolute;
+}
+.cometa{
+    background-image: url('../../IMG/blue-pattern-lightning-0ff6027b7478cbad4e85813c1d75713d.png');
+    background-size:cover;
+    height: 600px;
+    width: 700px;
+    transform:rotate(190deg);
+    margin-top: 140px;
+    margin-left:270px;
+    position: absolute;
+}
+.im{
+    height: 300px;
+    width: 300px;
+    /* background-image: url('../../IMG/FC.png'); */
+    background-size: contain;
+    position: absolute;
+    border-radius: 150px;
 }
 .img{
-    background-image: url('../../IMG/FC.png');
     background-size: contain;
-    border-radius: 150px;
+    position: absolute;
+    border-radius: 175px;
+    margin-top: 170px;
+    margin-left: 740px;
+    box-shadow: 0 0 30px rgb(87, 212, 250);
+}
+.img img{
+    height: 200px;
+    border-radius: 100px;
+}
+.info{
+    position:absolute;
+    height: 100px;
+    width: 200px;
+    margin-top: 720px;
+    margin-left: 1325px;
+    color: rgb(255, 255, 2);
+    font-size: 20px;
+    text-shadow: 0 0 5px violet;
+}
+.info h1{
+    align-items:center;
+}
+.tit{
+    width: 400px;
+    margin-top:200px;
+    margin-left: 1175px;
+    color:rgb(217, 0, 255);
+    text-shadow: 0 0 7px rgb(28, 196, 247);
+    position:absolute;
+    font-size: 20px;
+}
+.tit h1{
+    color: rgba(0, 255, 0, 0.872);
+    text-shadow: 0 0 25px rgb(182, 0, 0);
+    font-size: 50px;
 }

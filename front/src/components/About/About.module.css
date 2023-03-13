@@ -1,12 +1,56 @@
 body{
     background-image: url('../../IMG/estatus.avif');
 }
-.c{
-
+.leyenda{
+    background-image: url('../../IMG/estatus.avif');
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    width: 2050px;
+    height:1000px;
+    position:absolute;
+    border-radius: 50px;
+    box-shadow: 0 0 50px aqua;
 }
-.i{
-
+.leyenda h1{
+    position: absolute;
+    text-shadow: 0 0 30px darkred;
+    align-items: center;
+    margin-left: 860px;
 }
-.d{
-    
+.leyenda h3{
+    margin-top: 25px;
+    margin-left: 1600px;
+    color:darkred;
+    text-shadow: 0 0 20px black;
+}
+.esc{
+    width: 400px;
+    height: 55px;
+    margin-left:220px;
+    margin-top: 30px;
+}
+.esc h4{
+    margin-top: 40px;
+    color: chartreuse;
+    text-shadow: 0 0 30px rgb(104, 0, 0);
+}
+.esc h5{
+    margin-top:-15px;
+    color: darkgreen;
+    text-shadow: 0 0 10px rgb(255, 0, 0);
+}
+.mj{
+    width: 400px;
+    margin-left:220px;
+    margin-top: 35px;
+}
+.mj h6{
+    color:wheat;
+    margin-top: 40px;
+}
+.mj p{
+    color: whitesmoke;
+    margin-top: -20px;
 }
