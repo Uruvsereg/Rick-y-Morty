@@ -3,8 +3,8 @@ body{
 }
 .ing{
     margin-top: 255px;
-    margin-left: 385px;
-    width: 1325px;
+    margin-left: 350px;
+    width: 1200px;
     display:flex;
     position: center;
     flex-direction: row;
@@ -13,7 +13,7 @@ body{
 .logp{
     text-align: center;
     padding-top: 50px;
-    padding-left: 100px;
+    padding-left: 0px;
     padding-right: 0px;
     display: flex;
     flex-direction: row;
@@ -25,7 +25,7 @@ body{
     width: 500px;
     height: 200px;
     color:violet;
-    padding-right: 20px;
+    padding-right: 0px;
     background-color: rgba(240, 248, 255, 0);
     font-size: 35px;
 }
