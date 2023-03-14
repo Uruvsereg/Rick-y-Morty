@@ -5,13 +5,15 @@ body{
     background-image: url('../../IMG/bg2.jpg');
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 2050px;
-    height:1000px;
+    width: 1850px;
+    height:850px;
     position:absolute;
     border-radius: 50px;
     box-shadow: 0 0 50px rgb(252, 252, 95);
+    margin-top:0px;
+    margin-left:0px;
 }
 .b{
     background-image: url('../../IMG/galaxia01.gif');
@@ -52,29 +54,52 @@ body{
     border-radius: 100px;
 }
 .info{
+    background-image: url('../../IMG/Ci.png');
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
     position:absolute;
-    height: 100px;
-    width: 200px;
-    margin-top: 720px;
-    margin-left: 1325px;
+    height: 140px;
+    width: 300px;
+    margin-top: 490px;
+    margin-left: 1313px;
     color: rgb(255, 255, 2);
-    font-size: 20px;
+    font-size: 18px;
     text-shadow: 0 0 5px violet;
 }
 .info h1{
     align-items:center;
-}
-.tit{
-    width: 400px;
-    margin-top:200px;
-    margin-left: 1175px;
-    color:rgb(217, 0, 255);
-    text-shadow: 0 0 7px rgb(28, 196, 247);
-    position:absolute;
-    font-size: 20px;
+    margin-top: 30px;
 }
 .tit h1{
     color: rgba(0, 255, 0, 0.872);
     text-shadow: 0 0 25px rgb(182, 0, 0);
     font-size: 50px;
+}
+.bot{
+    background-image: url('../../IMG/bot.png');
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    width: 450px;
+    height:200px;
+    position:absolute;
+    margin-top:300px;
+    margin-left:1200px;
+    color:rgb(28, 196, 247);
+}
+.bot h1{
+    color: rgba(0, 255, 0, 0.872);
+    text-shadow: 0 0 25px rgb(182, 0, 0);
+    font-size: 45px;
+    margin-left:190px;
+}
+.bot h3{
+    margin-top:-20px;
+    margin-left: 250px;
+    position:absolute;
+    font-size: 15px;
+    width: 150px;
 }

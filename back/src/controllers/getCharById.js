@@ -10,7 +10,7 @@ const getCharById=(res,id)=>{
             image:data.image,
             name:data.name,
             gender:data.gender,
-            sapecies:data.species
+            species:data.species
         }
         res.writeHead(200,{'Content-Type':'application/json'})
         .end(JSON.stringify(char))

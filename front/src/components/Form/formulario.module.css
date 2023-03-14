@@ -2,9 +2,9 @@ body{
     background-image: url('../../IMG/intro.jpg');
 }
 .ing{
-    margin-top: 255px;
-    margin-left: 350px;
-    width: 1200px;
+    margin-top: 220px;
+    margin-left: 345px;
+    width: 1190px;
     display:flex;
     position: center;
     flex-direction: row;
@@ -19,7 +19,7 @@ body{
     flex-direction: row;
     color: red;
     font-size: 20px;
-    text-shadow: 0 0 12px rgb(67, 203, 248);;
+    text-shadow: 0 0 12px rgb(67, 203, 248);
 }
 .loginu{
     width: 500px;
@@ -50,7 +50,7 @@ body{
 .bot{
     display:flex;
     justify-content: center;
-    padding-top:160px;
+    padding-top:130px;
 }
 .bot button{
     position:absolute;

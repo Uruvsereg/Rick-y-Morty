@@ -85,9 +85,9 @@ const Detalles=()=>{
       <body className={style.bg}>
         <div className={style.b}>
           <div className={style.cometa}/>
-          <div className={style.tit}>
+          <div className={style.bot}>
             <h1>DETALLES:</h1>
-            <div>NOMBRE: {character.name}</div>
+            <h3>NOMBRE: {character.name}</h3>
           </div>
           <div>
             <div className={style.im}>
@@ -95,6 +95,7 @@ const Detalles=()=>{
                 <img src={character.image} alt={character.name} />
               </div>
             <div className={style.info}>
+               <p></p>
               <div>ESPECIE: {raza()} {character.species}</div>
               <div>SEXO: {sexo()}</div>
               <div>Estatus: {estado()}</div>

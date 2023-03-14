@@ -3,21 +3,23 @@ import Card from '../Card/Card';
 
 export default function Cards({characters,onClose}) {
    return (
-      // {characters.species=== 'Male' ? characte.species='♂':characters.species=== 'Female' ? characte.species='♀':characte.species='⚧️'}
-      <div className={style.c}>
-         {
-            characters.map(({id,name,species,gender,image})=>{
-               return <Card
-               id={id}
-               key={id}
-               name={name}
-               species={species}
-               gender={gender}
-               image={image}
-               onClose={()=>onClose(id)}
-               />
-            })
-         }
+      <div>
+         <p></p>
+         <div className={style.c}>
+            {
+               characters.map(({id,name,species,gender,image})=>{
+                  return <Card
+                  id={id}
+                  key={id}
+                  name={name}
+                  species={species}
+                  gender={gender}
+                  image={image}
+                  onClose={()=>onClose(id)}
+                  />
+               })
+            }
+         </div>
       </div>
    )
 }

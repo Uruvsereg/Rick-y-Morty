@@ -77,7 +77,7 @@ export default function Card({name,species,gender,image,onClose,id}) {
       }
    }
    return (
-      <div  className={style.bg}>
+      <div>
          <div className={style.card}>
             <div className={style.at}>
                <h2>{raza()}</h2>
