@@ -5,6 +5,7 @@
     background-image: url('../../IMG/bg.png');
     background-size: cover;
     border: .1rem solid red;
+    margin: 1rem;
 }
 .bc{
     display: flex;
