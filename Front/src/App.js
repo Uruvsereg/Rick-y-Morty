@@ -1,31 +1,20 @@
 import './App.css'
 import Card from './components/Card/Card.jsx'
 import Cards from './components/Cards.jsx'
-import SearchBar from './components/SearchBar.jsx'
+import SearchBar from './components/Searchbar/SearchBar.jsx'
 import characters, { Rick } from './data.js'
 
 function App () {
   return (
     <div className='App' style={{ padding: '25px' }}>
       <div>
-        <Card
-          name={Rick.name}
-          species={Rick.species}
-          gender={Rick.gender}
-          image={Rick.image}
-          onClose={() => alert('Emulamos que se cierra la card')}
+        <SearchBar
+          onSearch={(characterID) => alert(characterID)}
         />
       </div>
-      <hr />
       <div>
         <Cards
           characters={characters}
-        />
-      </div>
-      <hr />
-      <div>
-        <SearchBar
-          onSearch={(characterID) => alert(characterID)}
         />
       </div>
     </div>
