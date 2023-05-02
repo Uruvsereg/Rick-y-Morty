@@ -4,7 +4,7 @@ import style from './Card.module.css';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { agregar,eleminar } from '../../redux/actions';
 
-export default function Card({name,species,gender,image,onClose, id}) {
+export default function Card({name, species, gender, image, onClose, id}) {
    // const dispatch = useDispatch();
    // const [favorite, setFavorite]=useState(false);
    // const myFavorites = useSelector(state => state.myFavorites);
