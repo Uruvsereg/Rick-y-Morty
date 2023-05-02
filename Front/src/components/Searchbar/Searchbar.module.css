@@ -1,4 +1,18 @@
+.bar{
+    height: 2rem;
+    text-align: center;
+    text-shadow: 0 0 .4rem rgb(90, 255, 68);
+    background-color: black;
+    color: rgb(0, 255, 0);
+    border: .2rem solid rgb(0, 255, 0);
+    border-radius: 90% 10%;
+}
 .bott{
     height: 2rem;
     margin-left: .5rem;
+    background-color: black;
+    color: rgb(0, 255, 0);
+    border: .2rem solid rgb(0, 255, 0);
+    box-shadow: 0 0 .4rem rgb(90, 255, 68);
+    border-radius: .8rem;
 }

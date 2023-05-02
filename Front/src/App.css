@@ -1,3 +1,11 @@
 .App {
    text-align: center;
 }
+
+.home {
+  background-image: url('./IMG/intro.jpg');
+}
+
+.about {
+  background-color: #e0e0e0;
+}
