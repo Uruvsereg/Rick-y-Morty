@@ -1,0 +1,40 @@
+.navb{
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    border: .1rem solid red;
+}
+.per{
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+.per button{
+    width: 8rem;
+    height: 1.5rem;
+    text-shadow: 0 0 .4rem rgb(0, 255, 13);
+    border: .1rem solid rgb(0, 255, 0);
+    background-color: rgba(0, 116, 116, 0.736);
+    border-radius: .7rem;
+}
+.ap{
+    width: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+.ap button{
+    width: 8rem;
+    height: 1.5rem;
+    text-shadow: 0 0 .4rem rgb(0, 255, 13);
+    border: .1rem solid rgb(0, 255, 0);
+    background-color: rgba(0, 116, 116, 0.736);
+    border-radius: .7rem;
+}
