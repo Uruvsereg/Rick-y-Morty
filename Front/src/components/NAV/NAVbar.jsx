@@ -1,7 +1,7 @@
 import style from './NAVbar.module.css';
 import SearchBar from "./Searchbar/SearchBar"
 
-function NAV(){
+const NAV = ({onSearch}) =>{
     return(
         <div className={style.navb}>
             <div className={style.per}>
@@ -9,9 +9,7 @@ function NAV(){
                 <button>Favoritos</button>
             </div>
             <div>
-                <SearchBar
-                onSearch={(characterID) => alert(characterID)}
-                />
+                <SearchBar onSearch={onSearch}/>
             </div>
             <div className={style.ap}>
                 <button>Acerca de</button>

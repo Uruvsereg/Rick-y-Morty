@@ -1,19 +1,29 @@
 import './App.css'
-import Card from './components/Card/Card.jsx'
 import Cards from './components/Cards.jsx'
 import NAV from './components/NAV/NAVbar'
-import characters from './data.js'
+import { useState } from 'react'
 
 function App () {
+  const [characters, setCharacters]= useState([
+    {
+    name: 'Morty Smith',
+    species: 'Human',
+    gender: 'Male',
+    image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
+    }
+  ]);
+  const onSearch = (character) =>{
+    setCharacters([
+      ...character
+    ])
+  }
   return (
     <div className='App' style={{ padding: '25px' }}>
       <div>
-        <NAV/>
+        <NAV onSearch={onSearch}/>
       </div>
       <div>
-        <Cards
-          characters={characters}
-        />
+        <Cards characters={characters}/>
       </div>
     </div>
   )
